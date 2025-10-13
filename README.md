@@ -44,3 +44,37 @@ we can create react elements with React.createElement() which gives an object
 But in order to create elements easier react uses JSX elements to render elements
 JSX looks similar to HTML elements but not related to HTML
 The react render property takes over the charge and converts these JSX elements into HTML elements with the help of babel
+
+Everything in React consists of component
+
+Components consists of two types
+1. Functional Components
+2. Class Components
+
+Functional Components : The components which consists of function which in return react jsx or react element are called as functional components
+
+Class Components : The components which uses classes to build react components or elenments are called as class components
+
+Component Composition:  It is where one component is wrapped (or present) inside another component is called as component composition 
+
+We can run any javascript functionality inside jsx using {  } curl braces
+
+- We are building a swiggy clone app
+
+Header
+ - Logo 
+ - Nav Items
+
+Body
+ - Search
+- Restaurant Container
+     - Restaurant Card
+        - Img
+        - Name of Restaurant , Star Rating, Cuisine, delivery time 
+
+Footer
+ - Copyright
+ - Links
+ - Address
+ - Contact 
+

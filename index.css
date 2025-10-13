@@ -1,3 +1,58 @@
-.heading{
-    color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 0.5 rem;
+}
+
+.search {
+  padding: 20px;
+}
+
+.nav-items > ul {
+  display: flex;
+  gap: 60px;
+  font-size: 20px;
+  margin-top: 60px;
+  justify-content: space-around;
+  margin-right: 60px;
+  list-style: none;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+}
+
+.res-card {
+  width: 270px;
+  height: 400px;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+
+.res-card:hover {
+  border-radius: 10%;
+  cursor: pointer;
+  border: 1px solid green
+}
+
+.res-logo {
+  width: 100%;
+  height: 50%;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.res-container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -1,32 +1,33 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { useState, useCallback, useMemo } from "react";
-import "./index.css";
 
 
-function ParentComponent() {
-    const [count, setCount] = useState(0);
+/* 
+ Header
+  - Logo
+  - Nav Items
+  
+ Body
+  - Search
+  - Restaurant Container
+  - Restaurant Card
 
-    const handleClick = useCallback(() => {
-        setCount(prev => prev + 1);
-    }, []);
-    return <ChildComponent onClick={handleClick} count={count} />
-}
+  Footer
+  - Links
+  - Address 
+  - Contact 
+  - CopyRight
+*/
 
-const ChildComponent = React.memo(({ onClick, count }) => {
-    console.log('Child rendered: ' + count);
-    return <button onClick={onClick}>Count: {count}</button>
-});
+import Body from "./components/main/Body"
+import Footer from "./components/main/Footer"
+import Header from "./components/main/Header";
 
-export function App() {
+
+export default function AppLayout() {
     return (
-        <div>
-            <h1 className="heading">Hello, From Namaste ReactJs</h1>
-            <ParentComponent />
+        <div className="app">
+            <Header />
+            <Body />
+            <Footer />
         </div>
     );
 }
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
