@@ -1,0 +1,2 @@
+export const SWIGGY_API = "https://raw.githubusercontent.com/namastedev/namaste-react/refs/heads/main/swiggy-api"
+export const SWIGGY_LOGO = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png"

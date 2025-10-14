@@ -1,8 +1,10 @@
+import { SWIGGY_API, SWIGGY_LOGO } from "../../utils/constants"
+
 const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <img className="logo" src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png" />
+                <img className="logo" src={SWIGGY_LOGO} />
             </div>
             <div className="nav-items">
                 <ul>

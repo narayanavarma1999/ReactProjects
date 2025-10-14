@@ -41,7 +41,7 @@
 .res-card:hover {
   border-radius: 10%;
   cursor: pointer;
-  border: 1px solid green
+  border: 1px solid green;
 }
 
 .res-logo {
@@ -55,4 +55,27 @@
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
+}
+
+.filter-btn {
+  margin: 10px;
+}
+
+.search {
+  margin: 5px;
+  width: 90%;
+  height: 0px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+}
+
+.search-item {
+  margin-top: 18px;
+  position: absolute;
+  left: 30px;
+}
+
+.search-item :hover {
+  text-transform: none;
 }

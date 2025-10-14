@@ -21,7 +21,6 @@ import Body from "./components/main/Body"
 import Footer from "./components/main/Footer"
 import Header from "./components/main/Header";
 
-
 export default function AppLayout() {
     return (
         <div className="app">
