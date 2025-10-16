@@ -79,3 +79,32 @@
 .search-item :hover {
   text-transform: none;
 }
+
+.shimmer-container {
+  margin: 5%;
+  background-color: #f0f0f0;
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1px;
+}
+
+.shimmer-cards {
+  width: 200px;
+  height: 20rem;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.login{
+  width: 60px;
+  padding: 10px;
+}
+
+.search-button{
+  width: 60px;
+  height: 30px;
+}
