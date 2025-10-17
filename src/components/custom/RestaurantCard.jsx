@@ -1,5 +1,4 @@
 const RestaurantCard = (props) => {
-    console.log(`id:${props.data.id}`)
     const { name, cuisines, avgRating: ratings, slaString: minutes, cloudinaryImageId } = props.data
     const image = `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/5/28/5d955208-7037-4ff5-9f54-0bbbec6aa92d_11f789f0-80ad-4a9b-8458-441e9ea81726.jpeg`
     return (

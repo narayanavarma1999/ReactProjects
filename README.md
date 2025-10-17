@@ -93,8 +93,17 @@ React uses virtual DOM to render the components.React uses reconcilication alogr
 constructor() -> initialize data using props and state
 render -> render the component with initial data
 componentDidMount -> this execute in this mounting phase where we can execute side effects like api calls and update the state
-when props or state 
+when props or state
 
 <!-- Updating Phase -->
 
 componentDidUpdate
+
+<!-- Unmounting Phase -->
+
+componentWillUnmount
+
+---
+
+To optimize the app and improve the application we need to implement chunking, Lazy Loading, Dynamic Bundling,
+Code Splitting, on Demand Loading, dynamic loading
