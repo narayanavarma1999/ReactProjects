@@ -11,11 +11,10 @@ React.createElement("h1",{},"This is a h1 tag") ---> This gives an object and cr
 In order to build large scale applications react itself is not sufficient to build large scale user interface applications.
 So in order to achieve building and bundling of these applications we need bundlers like webpack, parcel, vite which bundle with the help of babel which converts JSX to react elements.React uses JSX in order to render it's element to the UI, where babel converts this JSX into react elements
 
-
-package.json is a package dependency management file 
+package.json is a package dependency management file
 
 ^ - carot ---> only patch and minor updates
-~ - tidle ---> only patch updates 
+~ - tidle ---> only patch updates
 
 package-lock.json , keeps track of exact version of dependencies
 
@@ -37,7 +36,7 @@ Parcel Functionality
 - Diagonistics
 - Proper Error Handling
 - Https
-- Tree Shaking - remove unused code    
+- Tree Shaking - remove unused code
 
 Every react element in react is a javascript object
 we can create react elements with React.createElement() which gives an object
@@ -48,6 +47,7 @@ The react render property takes over the charge and converts these JSX elements 
 Everything in React consists of component
 
 Components consists of two types
+
 1. Functional Components
 2. Class Components
 
@@ -55,26 +55,46 @@ Functional Components : The components which consists of function which in retur
 
 Class Components : The components which uses classes to build react components or elenments are called as class components
 
-Component Composition:  It is where one component is wrapped (or present) inside another component is called as component composition 
+Component Composition: It is where one component is wrapped (or present) inside another component is called as component composition
 
-We can run any javascript functionality inside jsx using {  } curl braces
+We can run any javascript functionality inside jsx using { } curl braces
 
 - We are building a swiggy clone app
 
 Header
- - Logo 
- - Nav Items
+
+- Logo
+- Nav Items
 
 Body
- - Search
+
+- Search
 - Restaurant Container
-     - Restaurant Card
-        - Img
-        - Name of Restaurant , Star Rating, Cuisine, delivery time 
+  - Restaurant Card
+    - Img
+    - Name of Restaurant , Star Rating, Cuisine, delivery time
 
 Footer
- - Copyright
- - Links
- - Address
- - Contact 
 
+- Copyright
+- Links
+- Address
+- Contact
+
+React uses virtual DOM to render the components.React uses reconcilication alogrithm by finding difference in dom elements and states and update the UI.React Fiber which renders the components in two phases
+
+1. Render Phase
+2. Commit Phase
+   In render phase, react updates the components and the elements in batches and they are actually render purely and with no side effects.May be paused, abort and restarted by React
+   In commit phase, runs side effects and updates & works with the DOM and schedules the updates.
+
+<!-- Mounting Phase -->
+
+constructor() -> initialize data using props and state
+render -> render the component with initial data
+componentDidMount -> this execute in this mounting phase where we can execute side effects like api calls and update the state
+when props or state 
+
+<!-- Updating Phase -->
+
+componentDidUpdate

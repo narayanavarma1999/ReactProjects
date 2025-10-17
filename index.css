@@ -108,3 +108,9 @@
   width: 60px;
   height: 30px;
 }
+
+.about{
+  margin: 20px 0px ;
+  padding: 10px;
+  border: 1px solid black;
+}
