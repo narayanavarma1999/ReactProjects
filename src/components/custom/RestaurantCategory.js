@@ -15,7 +15,7 @@ const RestaurantCategory = ({ data, showItems, setShowIndex, dummy }) => {
           <span className="ml-5 font-bold text-lg">
             {data.title} ({data.itemCards.length})
           </span>
-          <span onClick={handleClick}>⬇️</span>
+          <span className="text-lg">{showItems ? "⬆️" : "⬇️"}</span>
         </div>
 
         {showItems && <ItemList items={data.itemCards} dummy={dummy} />}

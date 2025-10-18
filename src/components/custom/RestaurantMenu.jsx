@@ -10,16 +10,13 @@ const RestaurantMenu = () => {
 
     const dummy = "Dummy Data";
 
-    const resInfo = useRestaurantMenu(resId);   
+    const resInfo = useRestaurantMenu(resId);
 
     const [showIndex, setShowIndex] = useState(null);
 
     if (resInfo === null) return <Shimmer />;
 
     const { name, cuisines, costForTwoMessage } = resInfo?.cards[0]?.card?.card?.info;
-
-    const { itemCards } =
-        resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
     const categories =
         resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
@@ -36,13 +33,14 @@ const RestaurantMenu = () => {
             </p>
             {/* categories accordions */}
             {categories.map((category, index) => (
-                // controlled component
+                     // controlled component
                 <RestaurantCategory
                     key={category?.card?.card.title}
                     data={category?.card?.card}
-                    showItems={index === showIndex ? true : false}
-                    setShowIndex={() => setShowIndex(index)}
-                    dummy={dummy}
+                    showItems={index === showIndex}
+                    setShowIndex={() =>
+                        setShowIndex(index === showIndex ? null : index)
+                    }
                 />
             ))}
         </div>

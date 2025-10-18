@@ -49,7 +49,6 @@ const Body = () => {
         return <Shimmer />;
     }
 
-    console.log(`filteredRestaurants:${JSON.stringify(filteredRestaurants)}`)
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200">
             {/* Search & Filter Section */}

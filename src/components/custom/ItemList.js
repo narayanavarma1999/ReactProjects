@@ -8,7 +8,6 @@ const ItemList = ({ items, dummy }) => {
   //   // Dispatch an action
   //   dispatch(addItem(item));
   // };
-
   return (
     <div>
       {items.map((item) => (
