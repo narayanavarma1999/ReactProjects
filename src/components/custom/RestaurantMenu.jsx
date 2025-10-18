@@ -10,9 +10,7 @@ const RestaurantMenu = () => {
 
     const dummy = "Dummy Data";
 
-    const resInfo = useRestaurantMenu(resId);
-
-    console.log(`resInfo:${JSON.stringify(resInfo)}`)
+    const resInfo = useRestaurantMenu(resId);   
 
     const [showIndex, setShowIndex] = useState(null);
 
@@ -29,7 +27,6 @@ const RestaurantMenu = () => {
                 c.card?.["card"]?.["@type"] ===
                 "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
         );
-    //console.log(categories);
 
     return (
         <div className="text-center">

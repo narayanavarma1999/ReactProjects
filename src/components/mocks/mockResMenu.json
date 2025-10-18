@@ -9,6 +9,7 @@
             "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
             "info": {
               "id": "425",
+              "promoted":true,
               "name": "Hotel Empire",
               "city": "Bangalore",
               "slugs": {

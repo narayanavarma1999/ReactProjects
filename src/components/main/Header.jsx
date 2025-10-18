@@ -8,12 +8,12 @@ const Header = () => {
     const [login, setLogin] = useState("Login")
     const onlineStatus = useOnlineStatus()
     return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src={SWIGGY_LOGO} />
+        <div className="flex justify-between bg-green-200">
+            <div className="bg-green-200">
+                <img className="w-48 shadow-2xl" src={SWIGGY_LOGO} />
             </div>
-            <div className="nav-items">
-                <ul>
+            <div>
+                <ul className="flex justify-between m-16 gap-10">
                     <li>
                         <>Online Status: {onlineStatus ? "✅" : "🛑"}</>
                     </li>
@@ -26,11 +26,11 @@ const Header = () => {
                     <li>
                         <Link to="/contact">Contact Us</Link>
                     </li>
-                      <li>
+                    <li>
                         <Link to="/grocery">Grocery</Link>
                     </li>
                     <li>Cart</li>
-                    <button className="login" onClick={() => { login === "Login" ? setLogin("Logout") : setLogin("Login") }}>{login}</button>
+                    <button onClick={() => { login === "Login" ? setLogin("Logout") : setLogin("Login") }}>{login}</button>
                 </ul>
             </div>
         </div>

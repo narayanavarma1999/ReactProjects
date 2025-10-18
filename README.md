@@ -107,3 +107,5 @@ componentWillUnmount
 
 To optimize the app and improve the application we need to implement chunking, Lazy Loading, Dynamic Bundling,
 Code Splitting, on Demand Loading, dynamic loading
+
+Higher Order Component - It is a component which takes one component as input and returns a new component

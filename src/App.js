@@ -21,7 +21,7 @@ import Header from "./components/main/Header";
 
 export default function AppLayout() {
     return (
-        <div className="app">
+        <div>
             <Header />
             <Outlet />
             <Footer />

@@ -29,10 +29,10 @@ const ItemList = ({ items, dummy }) => {
             </div>
             <p className="text-xs">{item.card.info.description}</p>
           </div>
-          <div className="w-3/12 p-4">
+          <div className="relative w-3/12 p-4">
             <div className="absolute">
               <button
-                className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg"
+                className="p-2 mx-24 rounded-lg w-20 text-center bg-white font-bold text-black shadow-lg"
                 onClick={() => handleAddItem(item)}
               >
                 Add +
